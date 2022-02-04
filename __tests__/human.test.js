@@ -4,21 +4,22 @@ describe('Human', () => {
 
   let hum;
   beforeEach(() => {
-    hum = new Human("myname", 28, false, 99, 99, 99);
+    hum = new Human("myname", 28, false, 100, 100, 100, 100);
   });
 
   test('should construct a human object sans the lifeExpect property', () =>{
     expect( hum.name).toEqual("myname");
     expect( hum.age ).toEqual(28);
     expect( hum.smoker).toEqual(false);
-    expect( hum.activityLvl).toEqual(99);
-    expect( hum.combatLvl).toEqual(99);
-    expect( hum.intelliLvl).toEqual(99);
+    expect( hum.activityLvl).toEqual(100);
+    expect( hum.combatLvl).toEqual(100);
+    expect( hum.intelliLvl).toEqual(100);
+    expect( hum.radProtect).toEqual(100);
   });
 
   test('should get a value for life expectancy', () =>{
     
-    expect(hum.calcLifeExpect()).toEqual(99);
+    expect(hum.calcLifeExpect()).toEqual(100);
   });
   // test('should ', () =>{
 
