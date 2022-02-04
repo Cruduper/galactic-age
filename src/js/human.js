@@ -8,21 +8,20 @@ export default class Human{
       this.combatLvl = combatLvl;
       this.intelliLvl = intelliLvl;
       this.radProtect = radProtect;
-      this.lifeExp = this.calcLifeExp();
+      this.lifeExp = this.calcLifeExpect();
     }
 
     calcLifeExpect(){
-      let lifeLength = 45;
+      // let lifeLength = 45;
 
-      if(this.smoker === false){
-        lifeLength += 15;
-      }
-      lifeLength += this.activityLvl * 0.1;
-      lifeLength += this.combatLvl * 0.1;
-      lifeLength += this.intelliLvl * 0.1;
-      lifeLength += this.radProtect * 0.1;
+      // if(this.smoker === false){
+      //   lifeLength += 15;
+      // }
+      // lifeLength += this.activityLvl * 0.1;
+      // lifeLength += this.combatLvl * 0.1;
+      // lifeLength += this.intelliLvl * 0.1;
+      // lifeLength += this.radProtect * 0.1;
 
-      
-
+      // return lifeLength;
     }
 }

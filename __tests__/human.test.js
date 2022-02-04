@@ -17,7 +17,7 @@ describe('Human', () => {
     expect( hum.radProtect).toEqual(100);
   });
 
-  test('should get a value for life expectancy', () =>{
+  test('should get a value for life expectancy when smoker === false', () =>{
     
     expect(hum.calcLifeExpect()).toEqual(100);
   });
