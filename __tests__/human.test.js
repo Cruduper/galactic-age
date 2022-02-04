@@ -16,10 +16,10 @@ describe('Human', () => {
     expect( hum.intelliLvl).toEqual(99);
   });
 
-  // test('should get a value for life expectancy', () =>{
-  //   hum
-  //   expect().toEqual();
-  // });
+  test('should get a value for life expectancy', () =>{
+    
+    expect(hum.calcLifeExpect()).toEqual(99);
+  });
   // test('should ', () =>{
 
   //   expect().toEqual();
