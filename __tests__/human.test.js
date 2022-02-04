@@ -1,14 +1,14 @@
-import Human from './../src/js/demo.js';
+import Human from './../src/js/human.js';
 
 describe('Human', () => {
 
   test('should construct a human object sans the lifeExpect property', () =>{
-    let hum = new Human(name, age, smoker, activityLvl, combatLvl, intelliLvl);
-    expect(this.name).toEqual(name);
-    expect(this.age ).toEqual(age);
-    expect(this.smoker).toEqual(smoker);
-    expect(this.activityLvl).toEqual(activityLvl);
-    expect(this.combatLvl).toEqual(combatLvl);
-    expect(this.intelliLvl).toEqual(intelliLvl);
+    let hum = new Human("myname", 28, false, 99, 99, 99);
+    expect(this.name).toEqual("myname");
+    expect(this.age ).toEqual(28);
+    expect(this.smoker).toEqual(false);
+    expect(this.activityLvl).toEqual(99);
+    expect(this.combatLvl).toEqual(99);
+    expect(this.intelliLvl).toEqual(99);
   });
 });
