@@ -4,30 +4,39 @@
   <title>Super Galactic Age Calculator</title>
 </head>
 <body>
+  <h3>Super Galactic Age Calculator</h3>
+
   <form id="userInput">
     <div class="form-group">
       <label for="name">Enter your name:</label>
-      <input id="name" type="text">
+      <input id="name" type="text" required>
     </div>
     <div class="form-group">
       <label for="age">Enter your age:</label>
-      <input id="age" type="number">
+      <input id="age" type="number" min="0" max="100" required>
+    </div>
+    <div class="form-group">
+      <label for="smoke">Do you smoke cigarettes?</label>
+      <select id="smoke">
+        <option val="false">No</option>
+        <option val="true">Yes</option>
+      </select>
     </div>
     <div class="form-group">
       <label for="activity">What is your fitness/activity level?</label>
-      <input id="activity" type="number">
+      <input id="activity" type="number" min="0" max="100" required>
     </div>
     <div class="form-group">
       <label for="combat">How much Space Combat experience do you have?</label>
-      <input id="combat" type="number">
+      <input id="combat" type="number" min="0" max="100" required>
     </div>
     <div class="form-group">
       <label for="intelligence">What's your intelligence level?</label>
-      <input id="intelligence" type="number">
+      <input id="intelligence" type="number" min="0" max="100" required>
     </div>
     <div class="form-group">
-      <label for="rad">How much radiation protection does your enclosure contain?:</label>
-      <input id="rad" type="number">
+      <label for="rad">How much radiation protection does your enclosure provide?:</label>
+      <input id="rad" type="range" min="0" max="100" required>
     </div>
 
     <button id="submit" type="button">Submit Information</button>
