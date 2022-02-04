@@ -21,6 +21,11 @@ describe('Human', () => {
     
     expect(hum.calcLifeExpect()).toEqual(100);
   });
+
+  test('should get a value for life expectancy when smoker === true', () =>{
+    hum.smoker = true;
+    expect(hum.calcLifeExpect()).toEqual(85);
+  });
   // test('should ', () =>{
 
   //   expect().toEqual();
