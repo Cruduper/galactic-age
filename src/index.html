@@ -5,21 +5,33 @@
 </head>
 <body>
   <form id="userInput">
-    <label for="name">Enter your name:</label>
-    <input id="name" type="text">
-    <label for="age">Enter your age:</label>
-    <input id="age" type="number">
-    <label for="activity">What is your fitness/activity level?</label>
-    <input id="activity" type="number">
-    <label for="combat">How much Space Combat experience do you have?</label>
-    <input id="combat" type="number">
-    <label for="intelligence">What's your intelligence level?</label>
-    <input id="intelligence" type="number">
-    <label for="rad">How much radiation protection does your enclosure contain?:</label>
-    <input id="rad" type="number">
+    <div class="form-group">
+      <label for="name">Enter your name:</label>
+      <input id="name" type="text">
+    </div>
+    <div class="form-group">
+      <label for="age">Enter your age:</label>
+      <input id="age" type="number">
+    </div>
+    <div class="form-group">
+      <label for="activity">What is your fitness/activity level?</label>
+      <input id="activity" type="number">
+    </div>
+    <div class="form-group">
+      <label for="combat">How much Space Combat experience do you have?</label>
+      <input id="combat" type="number">
+    </div>
+    <div class="form-group">
+      <label for="intelligence">What's your intelligence level?</label>
+      <input id="intelligence" type="number">
+    </div>
+    <div class="form-group">
+      <label for="rad">How much radiation protection does your enclosure contain?:</label>
+      <input id="rad" type="number">
+    </div>
 
-    <button type="submit">Submit</button>
-  </form>
-  <ul id="response"></ul>
+    <button id="submit" type="button">Submit Information</button>
+</form>
+  <p id="response"></p>
 </body>
 </html>
