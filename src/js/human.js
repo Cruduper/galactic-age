@@ -7,5 +7,8 @@ export default class Human{
       this.activityLvl = activityLvl;
       this.combatLvl = combatLvl;
       this.intelliLvl = intelliLvl;
+      this.lifeExp = this.calcLifeExp();
     }
+
+    calcLifeExpect()
 }
