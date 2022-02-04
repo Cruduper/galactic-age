@@ -24,4 +24,6 @@ export default class Human{
 
       return lifeLength;
     }
+
+    
 }
