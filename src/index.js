@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Human from './js/human.js';
 
+let user; 
+
 function correctInput(userValArr){
   let correctInputs = true;
   userValArr.forEach( function(inputVal) {
@@ -11,7 +13,6 @@ function correctInput(userValArr){
       correctInputs = false;
     }
   });
-
   return correctInputs;
 }
 
@@ -26,10 +27,25 @@ $("#submit").click( function(){
   userInputs[3] = parseInt( $("#intelligence").val() );
   userInputs[4] = parseInt( $("#rad").val() );
 
-  if ( correctInput( userInputs) ){
-    const user = new Human(nameVar, userInputs[0], smokeVar, userInputs[1], userInputs[2], userInputs[3], userInputs[4]);
-    //$("userInput").hide();
-  } else {
+  if ( correctInput(userInputs) ){
+    user = new Human(nameVar, userInputs[0], smokeVar, userInputs[1], userInputs[2], userInputs[3], userInputs[4]);
+    $("#userInput").hide();
+    $("#calculator").show();
+  } 
+  else {
     alert("You entered an incorrect value, try again!");
   }
+});
+
+
+$("#submitPlanet").click( () => {
+  $("#calculator").hide();
+  const chosenPlanet = $("#planetSelect").val();
+  const galacticAge = user.planetaryAge( user.age, chosenPlanet );
+  const galacticLifeExp = user.planetaryAge( user.lifeExp, chosenPlanet);
+  const galacticLifeLeft = galacticLifeExp - galacticAge;
+  $("galacticAge").text(galacticAge);
+  $("planet").text(chosenPlanet);
+  $("lifeLeft").text(galacticLifeLeft);
+  $("#response").show();
 });

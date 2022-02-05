@@ -41,6 +41,23 @@
 
     <button id="submit" type="button">Submit Information</button>
 </form>
-  <p id="response"></p>
+
+<div id="calculator">
+  <form>
+    <div class="form-group">
+      <label for="planetSelect">What planet would you like to see your life expectancy for?</label>
+      <select id="planetSelect">
+        <option value="Earth">Earth</option>
+        <option value="Mercury">Mercury</option>
+        <option value="Venus">Venus</option>
+        <option value="Mars">Mars</option>
+        <option value="Jupiter">Jupiter</option>
+      </select>
+      <button id="submitPlanet" type="button">Submit Planet</button>
+    </div>
+  </form>
+</div>
+
+  <p id="response">You are <span id="galacticAge"></span> years old in <span class="planet"></span> years. Your life expectancy is <span id="lifeLeft"></span> more <span class="planet"></span> years.</p>
 </body>
 </html>
