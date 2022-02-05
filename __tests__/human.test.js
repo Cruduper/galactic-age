@@ -29,7 +29,7 @@ describe('Human', () => {
 
   test("planetaryAge() method should convert earth age into age of a given planet's solar years", () =>{
     
-    expect( hum.planetaryAge(this.age, mars) ).toEqual();
+    expect( hum.planetaryAge( hum.age, "mars") ).toEqual(14);
   });
 
 

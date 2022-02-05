@@ -24,4 +24,23 @@ export default class Human{
 
     return lifeLength;
   }
+
+  planetaryAge(age, userPlanet){
+    // const planets = [ ["Mercury", .24 ],
+    //                   ["Venus", .62 ],
+    //                   ["Earth", 1.0],
+    //                   ["Mars", 1.88 ],
+    //                   ["Jupiter", 11.86 ],  ];
+
+    let newAge = 0;
+
+    // planets.forEach( (planet) =>{
+    //   if( planet[0] === userPlanet ){
+    //     newAge = Math.floor(age / planet[1]);
+    //   }
+    // });
+
+    return newAge;
+  }
+
 }
