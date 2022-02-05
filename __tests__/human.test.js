@@ -26,22 +26,23 @@ describe('Human', () => {
     hum.smoker = true;
     expect(hum.calcLifeExpect()).toEqual(85);
   });
+
+  test("planetaryAge() method should convert earth age into age of a given planet's solar years", () =>{
+    
+    expect( hum.planetaryAge(this.age, mars) ).toEqual();
+  });
+
+
   // test('should ', () =>{
 
   //   expect().toEqual();
   // });
+
   // test('should ', () =>{
 
   //   expect().toEqual();
   // });
-  // test('should ', () =>{
 
-  //   expect().toEqual();
-  // });
-  // test('should ', () =>{
-
-  //   expect().toEqual();
-  // });
   // test('should ', () =>{
 
   //   expect().toEqual();
