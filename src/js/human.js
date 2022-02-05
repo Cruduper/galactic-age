@@ -14,7 +14,7 @@ export default class Human{
   calcLifeExpect(){
     let lifeLength = 45;
 
-    if(this.smoker === false){
+    if(this.smoker === "No"){
       lifeLength += 15;
     }
     lifeLength += this.activityLvl * 0.1;

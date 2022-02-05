@@ -17,7 +17,6 @@ function correctInput(userValArr){
 }
 
 $("#submit").click( function(){
-  //alert("we're in the .click function!");
   const userInputs = [5];
   const nameVar = $("#name").val();
   userInputs[0] = parseInt( $("#age").val() );
@@ -44,8 +43,8 @@ $("#submitPlanet").click( () => {
   const galacticAge = user.planetaryAge( user.age, chosenPlanet );
   const galacticLifeExp = user.planetaryAge( user.lifeExp, chosenPlanet);
   const galacticLifeLeft = galacticLifeExp - galacticAge;
-  $("galacticAge").text(galacticAge);
-  $("planet").text(chosenPlanet);
-  $("lifeLeft").text(galacticLifeLeft);
+  $("#galacticAge").text(galacticAge);
+  $(".planet").text(chosenPlanet);
+  $("#lifeLeft").text(galacticLifeLeft);
   $("#response").show();
 });
