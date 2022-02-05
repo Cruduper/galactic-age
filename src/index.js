@@ -8,13 +8,7 @@ function correctInput(userValArr){
   let inputsCorrect;
 
   userValArr.forEach( function(inputVal) {
-    MyNamespace.isNaN = function (x) {
-      return x !== x;
-    }
-
-
-    if( /*(inputVal <= 100) || (inputVal >= 0) || */isNan(NaN)   ){
-      alert("its not a number!");
+    if( (inputVal <= 100) || (inputVal >= 0) || isNaN(inputVal) ){
       inputsCorrect = true;
     }
   });
