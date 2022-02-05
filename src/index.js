@@ -5,18 +5,14 @@ import './css/styles.css';
 import Human from './js/human.js';
 
 function correctInput(userValArr){
-  let inputsCorrect;
-
+  let correctInputs = true;
   userValArr.forEach( function(inputVal) {
-    if( (inputVal <= 100) || (inputVal >= 0) || isNaN(inputVal) ){
-      inputsCorrect = true;
+    if( (inputVal > 100) || (inputVal < 0) || Number.isNaN(inputVal) ){
+      correctInputs = false;
     }
   });
 
-  if (inputsCorrect != true){
-    inputsCorrect = false;
-  }
-  return inputsCorrect;
+  return correctInputs;
 }
 
 $("#submit").click( function(){
@@ -36,9 +32,4 @@ $("#submit").click( function(){
   } else {
     alert("You entered an incorrect value, try again!");
   }
- 
-  console(user.name);
-
-
-
 });
