@@ -22,7 +22,7 @@
 
 ## Description
 
-_This was a weekly project at my coding bootcamp to test our ability to use classes, use a professional production environment with various npm packages, and use Test Driven Development. 
+_This was a weekly project at my coding bootcamp to test our ability to use classes, use a professional production environment with various npm packages, and use Test Driven Development._ 
 
 _User can enter in their age (in Earth years) and personal information and then recieve what their age and life expectancy would be in terms of different planets' years._
 
@@ -41,7 +41,7 @@ _User can enter in their age (in Earth years) and personal information and then 
 
 ## License
 
-If you have any issues or questions, contact me at briefcasemanx@gmail.com
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](https://opensource.org/licenses/MIT)    
+If you have any issues or questions, contact me at briefcasemanx@gmail.com    
 
 Copyright (c) _2022_  _Eric Crudup_
