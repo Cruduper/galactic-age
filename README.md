@@ -2,7 +2,7 @@
 
 #### By _**Eric Crudup**_
 
-#### _How old would you be on a different planet? [SITE LINK](https://cruduper.github.io/galactic-age)_
+#### _How old would you be on a different planet?_
 
 ## Technologies Used
 
