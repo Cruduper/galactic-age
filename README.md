@@ -32,6 +32,7 @@ _User can enter in their age (in Earth years) and personal information and then 
 * _navigate to root folder of the project using command line_
 * _use the '$ npm install' command to install necessary packages_
 * _type in '$ npm run build' to build project_
+* _type in '$ npm run test' to run tests located in the "\_\_tests\_\_" folder
 * _type in '$ npm run start' command to open project in browser and start live server_
 
 ## Known Bugs
