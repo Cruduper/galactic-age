@@ -30,7 +30,7 @@ export default class Human{
                       ["Venus", .62 ],
                       ["Earth", 1.0],
                       ["Mars", 1.88 ],
-                      ["Jupiter", 11.86 ],  ];
+                      ["Jupiter", 11.86 ], ];
 
     let newAge = 0;
 

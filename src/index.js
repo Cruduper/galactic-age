@@ -36,15 +36,17 @@ $("#submit").click( function(){
   }
 });
 
-
 $("#submitPlanet").click( () => {
   $("#calculator").hide();
   const chosenPlanet = $("#planetSelect").val();
   const galacticAge = user.planetaryAge( user.age, chosenPlanet );
   const galacticLifeExp = user.planetaryAge( user.lifeExp, chosenPlanet);
-  const galacticLifeLeft = galacticLifeExp - galacticAge;
+  const galacticLifeLeft = (galacticAge < galacticLifeExp ) ? (galacticLifeExp - galacticAge) : 0;
+  const lifeExceeded = (galacticAge > galacticLifeExp) ? (galacticAge - galacticLifeExp) : 0;
   $("#galacticAge").text(galacticAge);
   $(".planet").text(chosenPlanet);
   $("#lifeLeft").text(galacticLifeLeft);
+  $("#lifeExceeded").text(lifeExceeded);
   $("#response").show();
+  $("#response2").show();
 });
